@@ -1,0 +1,68 @@
+Brazil command to create a "workspace" (Replace workspaceName in the above command with the actual name of workspace and versionSetName with the actual name of version set):
+brazil ws --create --name=workspaceName --root=/workplace/himash/workspaceName --versionset versionSetName
+
+Brazil command to create a "workspace" (Replace workspaceName in the above command with the actual name of workspace):
+brazil ws --create --name=workspaceName --root=/workplace/himash/workspaceName
+
+Retrieves a package from the branch specified (if working with eclipse, specify '--layout short') and adds it to the current workspace:
+brazil ws --use --package=packageName --branch=branchName
+
+Removes the package from the current workspace:
+brazil ws --remove --package "packageName"
+
+Attaches the brazil workspace to the apollo environment deployed on your box with the specified alias:
+brazil ws --attachEnvironment --alias alias
+
+Detaches the brazil workspace from the apollo environment deployed on your box with the specified alias:
+brazil ws --detachEnvironment --alias alias
+
+Builds the code existing in a package. This command must be executed in the root of the package:
+brazil-build
+
+Builds all the packages in the workspace after analyzing the dependencies closure:
+brazil-recursive-cmd --allPackages brazil-build
+
+Builds the package in order to prepare it for deploy in Apollo:
+brazil-build apollo-pkg
+
+Removes the cache from a previous build:
+brazil-build clean
+
+Specifies the version set from which the dependencies will be retrieved:
+brazil ws --use --versionSet versionSetName
+
+Use a specific revision of a Version Set (remove first "b" from event ID, i.e. use use "5730952414" instead of "b5730952414"):
+brazil workspace --use --versionset versionSetName --eventId eventId
+
+Called to sync your workspace with the version set you're developing against. This command is necessary after executing the brazil ws use command:
+brazil ws sync
+
+Removes the package from your local workspace. Note that this command only removes the local package, but leaves its p4 client alive:
+brazil ws --remove --package=packageName
+
+sync your currently selected version set. (long form brazil workspace --sync --metadata:
+brazil ws --sync -md
+
+Build the service and start it running:
+brazil-build server
+
+Will delete the entire workspace:
+brazil ws --delete
+
+Starts a dry run of your workspace:
+brazil ws --dryrun
+Cleaning a workspace - that is to remove all build artifacts from the workspace:
+brazil workspace --clean
+To remove a workspace:
+brazil ws --delete --root /path_to_workspace
+
+To see the root directory,workspace, version set and apollo overrides:
+brazil ws show
+
+To run single test on brazil:
+brazil-build single-unit-test -DtestClass=<ClassPath>
+For example:
+brazil-build single-unit-test -DtestClass=my.package.MyClass -DtestMethods=myMethod
+
+Remove packages not used in last 10 days from Brazil package cache:
+/apollo/env/SDETools/bin/pkg-cache-cleanup --days 10

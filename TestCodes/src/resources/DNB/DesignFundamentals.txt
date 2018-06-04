@@ -1,0 +1,20 @@
+Track how users utilize your system
+Track resource utilization
+Monitor the health and performance of the system
+Gather Instrumentation and Telemetry information 
+Use information to diagnose potential issues
+Tracking the availability of the system and its component elements
+Maintaining performance - ensure throughput does not degrade unexpectedly as the volume of work increases.
+Guaranteeing that the system meets any service-level agreements (SLAs) established with customers.
+Protect the privacy and security of the system, users, and their data.
+Track the operations that are performed for auditing or regulatory purposes.
+Monitor the day-to-day usage of the system and spot trends that might lead to problems.
+Track issues that occur, their possible causes, and rectification.
+Tracing operations and debugging software releases.
+Ability to drill down through the system to view the health status of subsystems and components.
+if the overall system is depicted as partially healthy, zoom in and determine which functionality is currently unavailable.
+Tracing execution of user requests - which requests succeeded, which failed, and how long each request takes.
+Use Synthetic user to monitor the health of the system. Capture the results of every step taken.
+Logging exceptions, faults, and warnings.
+Monitoring the health of any third-party services that the system uses. 
+Collecting ambient performance information, such as background CPU utilization or I/O activity.

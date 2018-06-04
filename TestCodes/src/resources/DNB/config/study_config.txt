@@ -1,0 +1,12 @@
+baseDir: /Users/himash/testcodes/src/Testcodes/src/resources/DNB/study
+n-back: 1
+interference: false
+mode: 1
+outputFile: BagOfWordsOutputFile.txt
+inputComparisonFile: inputComparisonFile.txt
+correctnessThreshold: 0.6
+skimThroughMode: true
+outputHistoryFile: OutputHistoryFile.txt
+displayFullSentencesInOutput: true
+printOutputAfterEverySentence: true
+stopWordsFile: stop_words.txt

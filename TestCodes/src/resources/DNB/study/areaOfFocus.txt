@@ -1,0 +1,3 @@
+fileName = GoalsAndValues.txt
+startIndex = 20
+endIndex = -1

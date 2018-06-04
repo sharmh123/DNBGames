@@ -1,0 +1,8 @@
+Cache Aside - load data on demand into a cache from a data store
+CQRS - Segregate read and write, update operations by using separate interfaces.
+Event Sourcing - Use append-only log to record all events in the system.
+Indexed fields - Create indexes for frequently accessed fields.
+Materialized Views - use prepopulated views when data isn't in the format needed for queries
+Sharding - Divide a data store into horizontal partitions or shards.
+Static Content Hosting - Deploy static content to s3 and deliver directly to clients.
+Valet Key - Use a token to provide clients with restricted access to a resource or service.

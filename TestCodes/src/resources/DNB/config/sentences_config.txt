@@ -1,0 +1,12 @@
+baseDir: /Users/himash/testcodes/src/Testcodes/src/resources/DNB/sentences
+exerciseLength: 15
+n-back: 2
+interference: false
+interference-level: 1
+inputFile: phrases.txt
+outputFile: BagOfWordsOutputFile.txt
+inputComparisonFile: BagOfWordsinputComparisonFile.txt
+displayFullSentencesInOutput: true
+correctnessThreshold: 0.7
+stopWordsFile: stop_words.txt
+outputHistoryFile: DNBGameOutputHistoryFile.txt

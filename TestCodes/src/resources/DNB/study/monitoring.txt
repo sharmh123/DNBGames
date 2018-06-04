@@ -1,0 +1,18 @@
+Track usage patterns of the system
+Track resource utilization
+Monitor the health and performance of the system
+Gather Instrumentation and Telemetry information 
+Use information to diagnose potential issues
+Track availability of all the components and overall system
+Throughput should not degrade as load increases
+Track that the system always meets SLA's
+Protect privacy and security of the system, users, and their data
+Track all the events for audit trail
+Spot trends that might lead to problems.
+Track issues, their root causes, and ensure proper fixes.
+build ability to dive deep into issues.
+Trace execution of user requests - successes, failures, and time taken by each request.
+Use Synthetic users to monitor the health of the system.
+Log all exceptions, and warnings.
+Monitoring the health of any third-party services that the system uses. 
+

@@ -1,0 +1,4 @@
+There is an issue with the creating new versions in the existing system that Tim pointed out in the review.   We’ve met with Rajesh / Kevin Thomas over the past week, and it was confirmed  that creating new versions (logic In the current system) should not be used. This is the primary reasons stopping us from using the current system handed over to us. In addition to this, the current system also has not been tested at scale (it hasn’t been tested again CC API with anything more than 1K). Beta testing on this system had issues over 10K TPS that were not fixed either.
+ 
+We are currently working with Rajesh / Kevin Thomas to come up with an alternate proposal.  We are documenting the pros/cons of the various options.  This is currently in progress and our plan is to review this with Kevin / Rajesh and Tim once it’s done.
+ 

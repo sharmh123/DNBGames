@@ -1,0 +1,2 @@
+exerciseLength: 15
+difficultyLevel: 3

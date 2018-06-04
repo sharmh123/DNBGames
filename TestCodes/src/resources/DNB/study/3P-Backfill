@@ -1,0 +1,16 @@
++Manish for visibility of another “Kevin functionality proposal”™
+ 
+I also believe that CCAPI should provide a “no-op the metadata if the data no-ops” mode and backfill should use this mode. This means that when backfill uses the SM timestamp to backfill data, if that is data that we have seen before (regardless of metadata parity) then CC drops the update and existing metadata is preserved. Not only will this ensure that the higher quality CC metadata is preserved, but it will reduce the WCU cost of backfill.
+
+Ketki: About #2, I think we are saying that Sidewinder needs to provide the functionality where the merchant’s submission timestamp is stored before we can do a full blown backfill.
+
+Tim: @Mathew – I’m not convinced that SW migration (unless it’s propagation through CC) is the best basis for Backfill to start on now, given BAP. If we wait for CC -> SW (submission) propogation I believe the backfill mechanics are drastically simplified and the costs reduced over the pre-BAP multi-phased approach on more coarse grained MCID level controls / migration status.
+
+KT: what exactly is drastically simplified if we wait for propagation through CC rather than simply propagation through Sidewinder?
+
+Tim: I believe there is no need to do the multi-phase migration (struggling to find the appropriate page here) as submissions are already propogating through CC; we just simply switch from submission -> CHS propagation (per datatype) downstream. Previous plan had phased co-ordination gating in terms of CC flowing data downstream through SW. Previous plan had phased co-ordination gating in terms of CC flowing data downstream through SW.
+
+Mathew: We will schedule the CCAPI changes (and provide ETA) for backfill when you have finalized the date conversation.  Kevin T will warn if any proposed features that look problematic. 
+(2) We already dialed up 50% of the 3P merchants onto Sidewinder so they are ready for backfill (likely to be 75% by end of May), the Sidewinder migration won’t hold up backfill.
+(3) Do we have clarity on what Merchant Tech already backfilled?  (as some indication of what % of use cases already have the truncated history) 
+
